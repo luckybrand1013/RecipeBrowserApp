@@ -8,21 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		286B4FAA2AEBC241002E422C /* RecipeBrowserAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FA92AEBC241002E422C /* RecipeBrowserAppApp.swift */; };
-		286B4FAC2AEBC241002E422C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FAB2AEBC241002E422C /* ContentView.swift */; };
+		286B4FAC2AEBC241002E422C /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FAB2AEBC241002E422C /* MealListView.swift */; };
 		286B4FAE2AEBC242002E422C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286B4FAD2AEBC242002E422C /* Assets.xcassets */; };
 		286B4FB12AEBC242002E422C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286B4FB02AEBC242002E422C /* Preview Assets.xcassets */; };
+		286B4FB92AEBC335002E422C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FB82AEBC335002E422C /* Meal.swift */; };
+		286B4FBB2AEBC645002E422C /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FBA2AEBC645002E422C /* MealDetail.swift */; };
+		286B4FBE2AEBC7B0002E422C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FBD2AEBC7B0002E422C /* NetworkService.swift */; };
+		286B4FC12AEBCCD9002E422C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 286B4FC02AEBCCD9002E422C /* Alamofire */; };
+		286B4FC32AEBCFA2002E422C /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FC22AEBCFA2002E422C /* MealDetailView.swift */; };
+		286B4FC62AEBD114002E422C /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FC52AEBD114002E422C /* MealViewModel.swift */; };
+		286B4FD72AEC0B6A002E422C /* RecipeBrowserAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B4FD62AEC0B6A002E422C /* RecipeBrowserAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		286B4FD82AEC0B6A002E422C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 286B4F9E2AEBC241002E422C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286B4FA52AEBC241002E422C;
+			remoteInfo = RecipeBrowserApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		286B4FA62AEBC241002E422C /* RecipeBrowserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeBrowserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286B4FA92AEBC241002E422C /* RecipeBrowserAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBrowserAppApp.swift; sourceTree = "<group>"; };
-		286B4FAB2AEBC241002E422C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		286B4FAB2AEBC241002E422C /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
 		286B4FAD2AEBC242002E422C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286B4FB02AEBC242002E422C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		286B4FB82AEBC335002E422C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		286B4FBA2AEBC645002E422C /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		286B4FBD2AEBC7B0002E422C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		286B4FC22AEBCFA2002E422C /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		286B4FC52AEBD114002E422C /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		286B4FD42AEC0B6A002E422C /* RecipeBrowserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeBrowserAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286B4FD62AEC0B6A002E422C /* RecipeBrowserAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBrowserAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		286B4FA32AEBC241002E422C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286B4FC12AEBCCD9002E422C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286B4FD12AEC0B6A002E422C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				286B4FA82AEBC241002E422C /* RecipeBrowserApp */,
+				286B4FD52AEC0B6A002E422C /* RecipeBrowserAppTests */,
 				286B4FA72AEBC241002E422C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				286B4FA62AEBC241002E422C /* RecipeBrowserApp.app */,
+				286B4FD42AEC0B6A002E422C /* RecipeBrowserAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +85,11 @@
 		286B4FA82AEBC241002E422C /* RecipeBrowserApp */ = {
 			isa = PBXGroup;
 			children = (
+				286B4FB72AEBC31D002E422C /* Modals */,
+				286B4FC72AEBD1C6002E422C /* View */,
+				286B4FC42AEBD0F5002E422C /* ViewModal */,
+				286B4FBC2AEBC798002E422C /* Network  */,
 				286B4FA92AEBC241002E422C /* RecipeBrowserAppApp.swift */,
-				286B4FAB2AEBC241002E422C /* ContentView.swift */,
 				286B4FAD2AEBC242002E422C /* Assets.xcassets */,
 				286B4FAF2AEBC242002E422C /* Preview Content */,
 			);
@@ -65,6 +102,48 @@
 				286B4FB02AEBC242002E422C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		286B4FB72AEBC31D002E422C /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				286B4FB82AEBC335002E422C /* Meal.swift */,
+				286B4FBA2AEBC645002E422C /* MealDetail.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		286B4FBC2AEBC798002E422C /* Network  */ = {
+			isa = PBXGroup;
+			children = (
+				286B4FBD2AEBC7B0002E422C /* NetworkService.swift */,
+			);
+			path = "Network ";
+			sourceTree = "<group>";
+		};
+		286B4FC42AEBD0F5002E422C /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				286B4FC52AEBD114002E422C /* MealViewModel.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		286B4FC72AEBD1C6002E422C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				286B4FAB2AEBC241002E422C /* MealListView.swift */,
+				286B4FC22AEBCFA2002E422C /* MealDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		286B4FD52AEC0B6A002E422C /* RecipeBrowserAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				286B4FD62AEC0B6A002E422C /* RecipeBrowserAppTests.swift */,
+			);
+			path = RecipeBrowserAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +162,30 @@
 			dependencies = (
 			);
 			name = RecipeBrowserApp;
+			packageProductDependencies = (
+				286B4FC02AEBCCD9002E422C /* Alamofire */,
+			);
 			productName = RecipeBrowserApp;
 			productReference = 286B4FA62AEBC241002E422C /* RecipeBrowserApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		286B4FD32AEC0B6A002E422C /* RecipeBrowserAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286B4FDA2AEC0B6A002E422C /* Build configuration list for PBXNativeTarget "RecipeBrowserAppTests" */;
+			buildPhases = (
+				286B4FD02AEC0B6A002E422C /* Sources */,
+				286B4FD12AEC0B6A002E422C /* Frameworks */,
+				286B4FD22AEC0B6A002E422C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286B4FD92AEC0B6A002E422C /* PBXTargetDependency */,
+			);
+			name = RecipeBrowserAppTests;
+			productName = RecipeBrowserAppTests;
+			productReference = 286B4FD42AEC0B6A002E422C /* RecipeBrowserAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +200,10 @@
 					286B4FA52AEBC241002E422C = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					286B4FD32AEC0B6A002E422C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 286B4FA52AEBC241002E422C;
+					};
 				};
 			};
 			buildConfigurationList = 286B4FA12AEBC241002E422C /* Build configuration list for PBXProject "RecipeBrowserApp" */;
@@ -111,11 +215,15 @@
 				Base,
 			);
 			mainGroup = 286B4F9D2AEBC241002E422C;
+			packageReferences = (
+				286B4FBF2AEBCCD9002E422C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 286B4FA72AEBC241002E422C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				286B4FA52AEBC241002E422C /* RecipeBrowserApp */,
+				286B4FD32AEC0B6A002E422C /* RecipeBrowserAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +238,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		286B4FD22AEC0B6A002E422C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +252,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286B4FAC2AEBC241002E422C /* ContentView.swift in Sources */,
+				286B4FC32AEBCFA2002E422C /* MealDetailView.swift in Sources */,
+				286B4FC62AEBD114002E422C /* MealViewModel.swift in Sources */,
+				286B4FBE2AEBC7B0002E422C /* NetworkService.swift in Sources */,
+				286B4FAC2AEBC241002E422C /* MealListView.swift in Sources */,
+				286B4FBB2AEBC645002E422C /* MealDetail.swift in Sources */,
+				286B4FB92AEBC335002E422C /* Meal.swift in Sources */,
 				286B4FAA2AEBC241002E422C /* RecipeBrowserAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		286B4FD02AEC0B6A002E422C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286B4FD72AEC0B6A002E422C /* RecipeBrowserAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		286B4FD92AEC0B6A002E422C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286B4FA52AEBC241002E422C /* RecipeBrowserApp */;
+			targetProxy = 286B4FD82AEC0B6A002E422C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		286B4FB22AEBC242002E422C /* Debug */ = {
@@ -320,6 +456,40 @@
 			};
 			name = Release;
 		};
+		286B4FDB2AEC0B6A002E422C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AR.RecipeBrowserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeBrowserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeBrowserApp";
+			};
+			name = Debug;
+		};
+		286B4FDC2AEC0B6A002E422C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AR.RecipeBrowserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeBrowserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeBrowserApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,7 +511,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		286B4FDA2AEC0B6A002E422C /* Build configuration list for PBXNativeTarget "RecipeBrowserAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286B4FDB2AEC0B6A002E422C /* Debug */,
+				286B4FDC2AEC0B6A002E422C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		286B4FBF2AEBCCD9002E422C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		286B4FC02AEBCCD9002E422C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 286B4FBF2AEBCCD9002E422C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 286B4F9E2AEBC241002E422C /* Project object */;
 }

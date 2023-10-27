@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  RecipeBrowserApp
 //
-//  Created by Abdul RehmanAli on 27/10/2023.
+//  Created by Jonathan Kidney on 27/10/2023.
 //
 
 import SwiftUI
@@ -18,13 +18,16 @@ struct MealListView: View {
                 }
             }
             .onAppear {
-                viewModel.fetchMealsInCategory(category: "Dessert")
+                viewModel.fetchMealsInCategory(category: "Dessert", completion: {
+                    // We have Data now
+                })
             }
             .navigationBarTitle("Dessert Recipes")
         }
     }
 }
 
+
 #Preview {
-    MealListView()
+    MealListView(viewModel: MealViewModel())
 }
